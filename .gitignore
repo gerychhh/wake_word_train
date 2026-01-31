@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large data & artifacts (keep folder skeleton via .gitkeep)
+data/features/*.npy
+data/backgrounds/musan/**
+data/my_data/**
+data/_generated_clips/**
+data/piper/**
+mit_rirs
+
+training_results/**
+!training_results/.gitkeep
+
+# Logs
+*.log

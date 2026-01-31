@@ -1,0 +1,10 @@
+# Extra deps for ONNX -> TFLite conversion (optional)
+# Use only if you pass --convert_to_tflite
+-r py310.txt
+
+# Conversion stack
+onnx-tf>=1.10,<2
+tensorflow>=2.13,<2.16
+
+# Some setups need an explicit protobuf pin with TF/onnx-tf
+protobuf<5

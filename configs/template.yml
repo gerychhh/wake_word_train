@@ -1,0 +1,32 @@
+# Copy this file and adjust paths/phrase to train a new wake word.
+model_name: "my_wakeword"
+target_phrase: ["my wake word"]
+output_dir: "../training_results"
+
+positive_samples_dir: "../data/positive/my_wakeword"
+custom_positive_data: "../data/positive/my_wakeword"
+
+piper_voice_model: "../data/piper/<voice>.onnx"
+piper_executable: "piper"
+piper_sample_generator_path: "../tools/piper_sample_generator"
+
+n_samples: 5000
+n_samples_val: 1000
+
+feature_data_files:
+  "ACAV100M": "../data/features/openwakeword_features_ACAV100M_2000_hrs_16bit.npy"
+
+false_positive_validation_data_path: "../data/features/validation_set_features.npy"
+
+rir_paths:
+  - "../data/rir/16khz"
+
+background_paths:
+  - "../data/backgrounds/musan/noise"
+  - "../data/backgrounds/musan/speech"
+  - "../data/backgrounds/musan/music"
+
+background_paths_duplication_rate:
+  - 1
+  - 1
+  - 1

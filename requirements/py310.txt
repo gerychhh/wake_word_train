@@ -1,0 +1,25 @@
+# Python 3.10 recommended
+# 1) Install torch/torchaudio FIRST (CPU or CUDA) from official PyTorch instructions.
+# 2) Then: pip install -r requirements/py310.txt
+numpy>=1.23,<3
+scipy>=1.9,<2
+scikit-learn>=1.2,<2
+tqdm>=4.64,<5
+PyYAML>=6,<7
+requests>=2,<3
+soundfile>=0.12,<1
+mutagen>=1.46,<2
+pronouncing>=0.2.0,<1
+audiomentations>=0.33,<1
+torch-audiomentations>=0.11,<1
+speechbrain>=1.0,<2
+torchinfo>=1.8,<2
+torchmetrics>=1.0,<2
+acoustics>=0.2.6,<1
+onnx>=1.13,<2
+onnxruntime>=1.15,<2
+
+# Linux-only optional:
+speexdsp-ns>=0.1.2,<1; platform_system == "Linux"
+ai-edge-litert>=2.0.2,<3; platform_system == "Linux" or platform_system == "Darwin"
+pathvalidate>=3
