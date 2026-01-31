@@ -674,16 +674,6 @@ apt-mark showmanual > apt.manual.txt
 
 ---
 
-## 9. Что коммитить на GitHub
-
-✅ Коммитить:
-- `configs/`, `openWakeWord/` (код), `tools/`, `scripts/`, `requirements/`
-
-❌ Не коммитить:
-- `data/`, `training_results/`
-
----
-
 ### License / Credits
 - This workspace wraps a vendored copy of **openWakeWord** (credits to upstream authors).
 - Datasets and large features remain the responsibility of the user and should be obtained from their original sources.
